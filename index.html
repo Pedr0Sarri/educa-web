@@ -1,148 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Educa web</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>EducaWeb</title>
 </head>
 
-<body>
-    <div class="container">
-
-    </div>
-
+<body id="EducaWeb">
     <header>
-        <h1>Educa Web</h1>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#inicio">Educa Web</a>
-
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Abrir menu">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#inicio">Início</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#cursos">Cursos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#listas-cursos">Sobre</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contato">Contato</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+        <a href="#EducaWeb">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <h1>EducaWeb</h1>
+        </a>
+        
+        <nav>
+            <a href="#Inicio"> Início</a>
+            <a href="#Cursos"> Cursos</a>
+            <a href="#Sobre"> Sobre</a>
+            <a href="#Depoimento"> Depoimento</a>
+            <a href="#Contato"> Contato</a>
         </nav>
     </header>
-
     <main>
-        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1600&q=80"
-                        class="d-block w-100" alt="Pessoa estudando desenvolvimento web em um notebook">
-                </div>
-                <div class="carousel-item">
-                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1600&q=80"
-                        class="d-block w-100" alt="Computador com código de programação na tela">
-                </div>
-                <div class="carousel-item">
-                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1600&q=80"
-                        class="d-block w-100" alt="Tela com código de desenvolvimento web">
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Anterior</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Próximo</span>
-            </button>
-        </div>
 
-        <!-- cursos -->
-        <section id="inicio">
-            <h2>Aprenda a desenvolver para web</h2>
-            <p>Melhores cursos de desenvolvimento web do mercado.</p>
-        </section>
-        <section id="cursos">
-            <h2>Cursos</h2>
-        </section>
-        <section id="listas-cursos">
-            <div class="row g-4 mb-4">
-                <div class="col-md-4">
-                    <div class="card h-100">
-                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80"
-                            class="card-img-top" alt="Computador com código de programação">
-                        <div class="card-body">
-                            <h5 class="card-title">Curso de HTML</h5>
-                            <p class="card-text">Domine as bases do desenvolvimento web com nosso curso completo de HTML.</p>
-                            <a href="#cursos" class="btn btn-primary">Ver curso</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card do curso de CSS. -->
-                <div class="col-md-4">
-                    <div class="card h-100">
-                        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80"
-                            class="card-img-top" alt="Pessoa estudando em um notebook">
-                        <div class="card-body">
-                            <h5 class="card-title">Curso de CSS</h5>
-                            <p class="card-text">Aprenda a criar designs responsivos e modernos com CSS.</p>
-                            <a href="#cursos" class="btn btn-primary">Ver curso</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Card do curso de JavaScript. -->
-                <div class="col-md-4">
-                    <div class="card h-100">
-                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=900&q=80"
-                            class="card-img-top" alt="Tela com código de JavaScript">
-                        <div class="card-body">
-                            <h5 class="card-title">Curso de JavaScript</h5>
-                            <p class="card-text">Transforme seus websites em aplicações interativas com JavaScript.</p>
-                            <a href="#cursos" class="btn btn-primary">Ver curso</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <article>
-                <h3>Curso de HTML</h3>
-                <p>Domine as bases do desenvolvimento web com nosso curso completo de HTML.</p>
-            </article>
-            <article>
-                <h3>Curso de CSS</h3>
-                <p>Aprenda a criar designs responsivos e modernos com CSS.</p>
-            </article>
-            <article>
-                <h3>Curso de JavaScript</h3>
-                <p>Transforme seus websites em aplicações interativas com JavaScript.</p>
-            </article>
-        </section>
     </main>
-
-    <footer id="contato">
-        <h1>Contato</h1>
-        <p>RA:145114</p>
-        <p>RA:143379</p>
+    <footer>
 
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 
 </html>
