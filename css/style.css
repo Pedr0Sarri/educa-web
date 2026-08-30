@@ -1,5 +1,5 @@
 * {
-    box-sizing: border-box
+    box-sizing: border-box;
 }
 
 body {
@@ -10,6 +10,48 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+}
+
+
+.imagem{
+    width: 150px;
+    height: 150 px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.carousel-item > img {
+    height: 300px;
+
+}
+
+.carousel-item {
+    position: relative;
+}
+
+.carousel-item::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(3, 17, 33, 0.90);
+    z-index: 1;
+}
+
+.carousel-caption {
+    z-index: 2;
+}
+
+.carousel-caption {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    left: 15%;
+}
+
+.computador {
+    height: 250px;
+    opacity: 50%;
+    z-index: 0;
 }
 
 /*---------------------------------------------------------------------- */
@@ -75,15 +117,54 @@ main{
 
 /*---------------------------------------------------------------------- */
 
-footer{
+footer {
     color: white;
     background-color: #07192c;
     padding: 15px;
+    border-top: 1px solid #30445a;
+}
+
+footer > section{
+    color: #fff;
+    text-decoration: none;
     display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 10px 60px;
+    font-size: small;
+}
+
+footer i{
+    font-size: 15px;
+    margin-right: 0;
+    display: flex;
+    text-align: center;
     justify-content: center;
-    align-items: center;
+}
+
+footer section > i{
+    font-size: 30px;
+    margin: 0px 15px 0px 0px;
+    display: flex;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
 }
 
 footer p{
-    margin: 0;
+    margin: 10px 0px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    gap: 10px;
+}
+
+footer > p{
+    justify-content: center;
+    display: flex;
+    margin: 0px;
+    font-size: 10px;
 }
