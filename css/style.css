@@ -12,6 +12,72 @@ body {
     flex-direction: column;
 }
 
+/*---------------------------------------------------------------------- */
+
+#Cursos h2 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+#Cursos .card {
+    height: 100%;
+    padding: 15px;
+}
+
+#Cursos .card-title {
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+#Cursos .card-text {
+    font-size: 13px;
+}
+
+.icone-curso {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0 auto 15px;
+
+    color: white;
+    font-size: 22px;
+}
+
+.html {
+    background-color: #ff5722;
+}
+
+.css {
+    background-color: #0d6efd;
+}
+
+.bootstrap {
+    background-color: #7952b3;
+}
+
+.javascript {
+    background-color: #28a745;
+}
+
+#Sobre {
+    background-color: #eef5ff;
+}
+
+#Sobre h2 {
+    font-weight: bold;
+}
+
+#Sobre img {
+    max-width: 90%;
+}
+
+/*---------------------------------------------------------------------- */
 
 .imagem{
     width: 150px;
@@ -45,7 +111,9 @@ body {
     display: flex;
     justify-content: space-between;
     text-align: left;
+    align-items: center;
     left: 15%;
+    right: 15%;
 }
 
 .computador {
@@ -121,7 +189,6 @@ footer {
     color: white;
     background-color: #07192c;
     padding: 15px;
-    border-top: 1px solid #30445a;
 }
 
 footer > section{
